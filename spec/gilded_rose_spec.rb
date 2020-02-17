@@ -161,7 +161,7 @@ describe GildedRose do
 		  let(:initial_sell_in){10}
 		  
 		  it "degrades quality by 2" do
-		    expect(item.quality-1).to be 8
+		    expect(item.quality).to be 8
 		  end
 		end
 	end
