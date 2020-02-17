@@ -156,13 +156,11 @@ describe GildedRose do
 		   # expect(item.quality).to be <= 50
 		 # end
 		#end
-		
-		context "when sell date -1" do
-		  let(:initial_sell_in){10}
+
+		let(:initial_sell_in){10}
 		  
-		  it "degrades quality by 2" do
-		    expect(item.quality).to be 8
-		  end
+		it "degrades quality by 2" do
+		  expect(item.quality).to be 8
 		end
 	end
 	#end
