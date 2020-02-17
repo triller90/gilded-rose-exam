@@ -161,7 +161,7 @@ describe GildedRose do
 		  #let(:initial_sell_in) { -1 }
 
 		it "quality degrades twice as fast" do
-          expect(item.quality).to eq 8 # from 10 it goes to 8
+          expect(item.quality).to eq 7 # from 10 it goes to 8
 		end
 		#end
 	end
