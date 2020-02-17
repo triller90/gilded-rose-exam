@@ -148,7 +148,6 @@ describe GildedRose do
 	#new Conjured
 	context "when item name is 'Conjured'" do
 		let(:name){'Conjured'}
-
 		#context "and quality is 50" do
 		  #let(:initial_quality) { 50 }
 
@@ -158,7 +157,7 @@ describe GildedRose do
 		#end
 		  
 		it "quality degrades twice as fast" do
-		  expect(item.quality).to be 8
+		  expect(item.quality-1).to be 8
 		end
 	end
 	#end
