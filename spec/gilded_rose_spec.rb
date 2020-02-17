@@ -156,10 +156,8 @@ describe GildedRose do
 		   # expect(item.quality).to be <= 50
 		 # end
 		#end
-
-		let(:initial_sell_in){10}
 		  
-		it "degrades quality by 2" do
+		it "quality degrades twice as fast" do
 		  expect(item.quality).to be 8
 		end
 	end
