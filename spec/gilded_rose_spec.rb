@@ -149,13 +149,13 @@ describe GildedRose do
 	context "when item name is 'Conjured'" do
 		let(:name){'Conjured'}
 
-		context "and quality is 50" do
-		  let(:initial_quality) { 50 }
+		#context "and quality is 50" do
+		  #let(:initial_quality) { 50 }
 
-		  it "cannot exceed 50" do
-		    expect(item.quality).to be <= 50
-		  end
-		end
+		  #it "cannot exceed 50" do
+		   # expect(item.quality).to be <= 50
+		 # end
+		#end
 		
 		context "when sell date -1" do
 		  let(:initial_sell_in){10}
