@@ -158,10 +158,10 @@ describe GildedRose do
 		end
 		
 		context "and sell in is 10 days" do
-		  let(:initial_sell_in) { 10 }
+		  #let(:initial_sell_in) { 10 }
 
-		  it "degrades quality by 1" do
-            expect(item.quality).to eq 9-1
+		  it "degrades quality by 2" do
+            expect(item.quality).to eq 8
 		  end
 		end
 	end
