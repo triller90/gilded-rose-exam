@@ -145,6 +145,17 @@ describe GildedRose do
       end
     end
 
+	#new Conjured
+	context "when item name is 'Conjured'" do
+		let(:name){'Conjured'}
+		
+		it "quality degrades twice as fast" do
+		  expect(item.quality).to eq 8 # from 10 it goes to 8
+		end
+		
+	end
+	#end
+	
     context "with multiple items" do
       let(:items) do
         [
