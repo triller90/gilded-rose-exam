@@ -104,7 +104,7 @@ describe GildedRose do
         let(:initial_sell_in) { 9 }
 
         it "increases quality by 2" do
-          expect(item.quality).to eq 12
+          expect(item.quality).to eq 12#bug
         end
       end
 
@@ -145,6 +145,23 @@ describe GildedRose do
       end
     end
 
+	#new Conjured
+	context "when item name is 'Conjured'" do
+		let(:name){'Conjured'}
+		#context "and quality is 50" do
+		  #let(:initial_quality) { 50 }
+
+		  #it "cannot exceed 50" do
+		   # expect(item.quality).to be <= 50
+		 # end
+		#end
+		  
+		it "quality degrades twice as fast" do
+		  expect(item.quality-1).to be 8
+		end
+	end
+	#end
+	
     context "with multiple items" do
       let(:items) do
         [
